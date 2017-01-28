@@ -51,8 +51,15 @@
 /* 1 */
 /***/ function(module, exports) {
 
-	console.log('Hello world! (from webpack)');
+	// 'use strict';
 
+	undefined.a = 25;
+
+	var print = function print() {
+	  console.log('this.a', this);
+	};
+
+	print();
 
 /***/ }
 /******/ ]);
